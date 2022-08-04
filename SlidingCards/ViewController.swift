@@ -54,10 +54,6 @@ class ViewController: UIViewController, CardSliderDataSource {
     
     @IBAction func didTapButton() {
         
-//        guard let dataSource = self as? CardSliderDataSource else {
-//            return
-//        }
-        
         let vc = CardSliderViewController.with(dataSource: self)
         vc.title = "Cards by Rashid"
         vc.modalPresentationStyle = .fullScreen
